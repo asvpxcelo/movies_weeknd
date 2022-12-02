@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.login__form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #829460;
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    padding: 35px;
+}
+
+.login__form__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login__form__inputs input {
+    margin-top: 12px;
+    background-color: #FFF8EA;
+    color: #fff;
+    border: none;
+    height: 3rem;
+    outline: none;
+    border-radius: 8px;
+}
+
+.login__form__inputs input::placeholder {
+    color: #829460;
+    text-align: center;
+}
+
+.login__form__button {
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFF8EA;
+    color: #829460;
+    display: block;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.login__form__inputs__sign_in {
+    color: aliceblue;
+    padding-top: 5px;
+}
