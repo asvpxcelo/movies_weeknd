@@ -1,22 +1,40 @@
-import './LoginComponent.css'
-import { FiLogIn } from 'react-icons/fi';
+import ButtonComponent from "../button-component/ButtonComponent";
+import { LoginForm, LoginFormForm, LoginFormInputs } from "../input-component/styles";
 
 const LoginComponent = () => {
-    return ( 
-    <div className="login__form">
-        <div className='login__form__form'>
-            <FiLogIn
-            size='25px'
-            color='#FFF8EA'
-            />
-        <form className='login__form__inputs'>
-            <input type='text' placeholder="Please type your best email" className="login__form__email"></input>
-            <input type='password' placeholder="Password" className="login__form__email"></input>
-            <button className="login__form__button">Sign In</button>
-        </form>
-        <p>Not a User? <span className='login__form__inputs__sign_in'>Sign In</span></p>
-        </div>
-    </div> );
+
+    const handleChange = (e) => {
+        console.log(e.target.value)
+    }
+
+    const signIn = () => {
+        alert('works')
+    }
+
+    return (
+        <LoginForm>
+            <LoginFormForm>
+                <h1>Faça seu Login 👋</h1>
+                <LoginFormInputs
+                name='email'
+                placeholder="Digite o seu email"
+                onChange={handleChange}
+                type='email'
+                />
+                <LoginFormInputs
+                name='password'
+                placeholder="Digite sua Senha"
+                onChange={handleChange}
+                type='password'
+                />
+                <ButtonComponent
+                    type='submit'
+                    text='Sign In'
+                    onClick={signIn}
+                />
+            </LoginFormForm>
+        </LoginForm>
+    );
 }
  
 export default LoginComponent;
