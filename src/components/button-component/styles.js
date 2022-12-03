@@ -10,4 +10,16 @@ export const SignInButton = styled.button`
   display: block;
   font-weight: bold;
   transition: 1s all;
+
+  ${props => props.disabled === false &&`
+    &:hover {
+      background-color: #FFF;
+      color: #f6f6f6
+    }
+  `}
+
+
+  ${props => props.disabled &&`
+  opacity: 0.7
+  `}
 `;

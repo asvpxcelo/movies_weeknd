@@ -18,6 +18,7 @@ export const LoginFormForm = styled.form`
   width: 320px;
   height: 320px;
   padding: 35px;
+  color: #fff
 `;
 
 export const LoginFormInputs = styled.input`
